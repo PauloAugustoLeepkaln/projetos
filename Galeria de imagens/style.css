@@ -1,0 +1,38 @@
+body{
+    margin: 0;
+}
+
+h1{
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:aliceblue
+}
+
+header{
+    background-color: rgb(82, 118, 218);
+    display: flex;
+    justify-content: space-between; /*só funciona com display*/
+    padding: 1%
+}
+
+#box-categorias button{
+    background-color: rgb(135, 199, 98);
+    padding: 13px;
+    border: 0;
+    color: aliceblue;
+    border-radius: 10px;
+}
+
+#box-ordenar button{
+    background-color: rgb(87, 187, 226);
+    padding: 13px;
+    border: 0;
+    color: aliceblue;
+    border-radius: 10px;
+}
+
+#imagem-fodasse h1{
+    background-color: rgb(87, 187, 226);
+    border-radius: 5px;
+    padding: 2px;
+}
