@@ -1,37 +1,38 @@
 body{
     margin: 0;
+    background-image: linear-gradient(to left,#ff53da, rgb(255, 0, 0));
 }
 
 h1{
     margin: 0;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color:aliceblue
+    color:aliceblue;
 }
 header{
-    background-color: rgb(82, 118, 218);
+    background-color: #ff53da;
     display: flex;
     justify-content: space-between; /*só funciona com display*/
-    padding: 1%
+    padding: 1%;
 }
 
 #box-categorias button{
-    background-color: rgb(135, 199, 98);
+    background-image: linear-gradient(to top,rgb(54, 194, 250), rgb(0, 255, 34));
     padding: 13px;
-    border: 0;
-    color: aliceblue;
+    border: 1;
+    border-color: black;
     border-radius: 10px;
 }
 
 #box-ordenar button{
-    background-color: rgb(87, 187, 226);
+    background-image: linear-gradient(to top,rgb(54, 194, 250), rgb(0, 255, 34));
     padding: 13px;
-    border: 0;
-    color: aliceblue;
+    border: 1;
+    border-color: black;
     border-radius: 10px; 
 }
 
 #imagem-fodasse h1{
-    background-color: rgb(87, 187, 226);
+    background-image: linear-gradient(to top,rgb(54, 194, 250), rgb(0, 255, 34));
     border-radius: 5px;
     padding: 2px;
 }
