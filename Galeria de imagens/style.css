@@ -1,18 +1,39 @@
 body{
     margin: 0;
-    background-image: linear-gradient(to left,#ff53da, rgb(255, 0, 0));
 }
-
+  
 h1{
     margin: 0;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color:aliceblue;
+    font-family: 'Times New Roman', Times, serif;
+    color:rgb(0, 0, 0);
 }
 header{
-    background-color: #ff53da;
+    background-color: #8199e7;
     display: flex;
     justify-content: space-between; /*só funciona com display*/
     padding: 1%;
+    animation: 10000ms ease-in-out infinite color-change;
+  }
+  
+  @keyframes color-change {
+    0% {
+      background-color: rgb(0, 255, 255);
+    }
+    20% {
+      background-color: gold;
+    }
+    40% {
+      background-color: #e41c1c;
+    }
+    60% {
+      background-color: rgb(235, 0, 235);
+    }
+    80% {
+      background-color: rgb(0, 255, 0);
+    }
+    100% {
+      background-color: rgb(0, 255, 255);
+    }
 }
 
 #box-categorias button{
