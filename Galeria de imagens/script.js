@@ -57,6 +57,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         console.log(pessoa)        
 
+        
         // ------------------------------ / --------------------- /
 
         const numeros = ["A", "B", "C", "D"]
@@ -65,5 +66,8 @@ document.addEventListener('DOMContentLoaded', function () {
             console.log(elemento)
 
         })
+
+        // ------------------------------ / --------------------- /
+
 });
 
