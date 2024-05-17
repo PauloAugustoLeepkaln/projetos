@@ -1,5 +1,9 @@
 document.addEventListener('DOMContentLoaded', function(){ 
 
+    const baseImagens = {
+        todas: []
+    }
+
     // Evento de clique
     document.body.addEventListener('click', function (event){ 
 
