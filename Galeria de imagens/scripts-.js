@@ -15,8 +15,16 @@ document.addEventListener('DOMContentLoaded', function(){
 
         imagens.forEach(img => {
             console.log(img);
-            galeria.innerHTML += '<div> <img src="imagens/'+img+'" /> </div>'
+            galeria.innerHTML += '<div class="imagem-item" > <img src="imagens/'+img+'" /> </div>'
         
+        })
+    }
+
+    function ordenaImagens(ordem){
+        const imagens = Array.from(document.querySelectorAll("#galeria-imagens .imagem-item"));
+
+        imagens.sort((a, b) => {
+            console.log(a);
         })
     }
 
@@ -29,6 +37,12 @@ document.addEventListener('DOMContentLoaded', function(){
             const categoria = event.target.dataset.categoria;
             carregaImagens(categoria);
 
+        }
+    
+        if(event.target.classList.contains('botao-ordenar')){
+            const ordem = event.target.dataset.ordem;
+            ordenaImagens(ordem);
+            
         }
 
     })
