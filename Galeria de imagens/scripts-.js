@@ -1,10 +1,10 @@
 document.addEventListener('DOMContentLoaded', function(){ 
 
     const baseImagens = {
-        todas: ['cidade.png', 'cidade2.png', 'animais.png', 'animais2.png', 'animais3.png', 'animais4.png', 'natureza.png', 'natureza2.png'],
-        natureza: ['natureza.png', 'natureza2.png'],
-        cidade: ['cidade.png', 'cidade2.png'],
-        animais: ['animais.png', 'animais2.png', 'animais3.png', 'animais4.png',],
+        todas: ['cidade.png', 'tokyo.png', 'guara.png', 'onça.png', 'arara.png', 'outono.png', 'cataratas.png'],
+        natureza: ['outono.png', 'cataratas.png'],
+        cidade: ['cidade.png', 'tokyo.png'],
+        animais: ['guara.png', 'onça.png', 'arara.png'],
     }
 
     function carregaImagens(categoria){
@@ -15,19 +15,25 @@ document.addEventListener('DOMContentLoaded', function(){
 
         imagens.forEach(img => {
             console.log(img);
-            galeria.innerHTML += '<div class="imagem-item" > <img src="imagens/'+img+'" /> </div>'
-        
+            galeria.innerHTML += '<div class = "imagem-item"> <img src="imagens/'+img+'" alt="'+img+'" /> </div>'
         })
     }
 
     function ordenaImagens(ordem){
         const imagens = Array.from(document.querySelectorAll("#galeria-imagens .imagem-item"));
-
-        imagens.sort((a, b) => {
-            console.log(a);
+        imagens.sort((a, b) =>{
+            const nameA = a.querySelector('img').getAttribute('alt');
+            const nameB = b.querySelector('img').getAttribute('alt');
+            
+            //operador ternário - se for true ? se não :
+            return ordem == 'asc' ? nameA.localeCompare(nameB) : nameB.localeCompare(nameA)
+        })
+        const galeria = document.getElementById("galeria-imagens");
+        galeria.innerHTML = ''; //esvazia box das imagens
+        imagens.forEach(imagem => {
+            galeria.appendChild(imagem)//adiciona as imagens novamente, agora ordenada
         })
     }
-
 
     // Evento de clique
     document.body.addEventListener('click', function (event){ 

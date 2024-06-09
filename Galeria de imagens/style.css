@@ -1,73 +1,44 @@
 body{
     margin: 0;
+    background-color: black;
 }
   
 h1{
     margin: 0;
     font-family: 'Times New Roman', Times, serif;
-    color:rgb(0, 0, 0);
+    color:rgb(255, 255, 255);
 }
+
 header{
-    background-color: #8199e7;
+    background-color: #00aeff;
     display: flex;
     justify-content: space-between; /*só funciona com display*/
     padding: 1%;
-    animation: 10000ms ease-in-out infinite color-change;
-  }
-  
-  @keyframes color-change {
-    0% {
-      background-color: rgb(255, 0, 0);
-    }
-    20% {
-      background-color: rgb(255, 136, 1);
-    }
-    40% {
-      background-color: #ffe609;
-    }
-    60% {
-      background-color: rgb(85, 226, 3);
-    }
-    80% {
-      background-color: rgb(0, 238, 255);
-    }
-    100% {
-      background-color: rgb(183, 0, 255);
-    }
 }
-
+  
 #galeria-imagens{
     display:flex;
     flex-wrap: wrap;
     justify-content: space-around;
-
-
 }
 
 #galeria-imagens img{
-    max-width: 100%;
-
+    max-width: 1860px;
 }
-
-
 
 #box-categorias button{
     background-image: linear-gradient(to top,rgb(54, 194, 250), rgb(0, 255, 34));
     padding: 13px;
-    border: 1;
-    border-color: black;
     border-radius: 10px;
 }
 
 #box-ordenar button{
     background-image: linear-gradient(to top,rgb(54, 194, 250), rgb(0, 255, 34));
     padding: 13px;
-    border: 1;
-    border-color: black;
     border-radius: 10px; 
 }
 
-#imagem-fodasse h1{
+#imagem-1 h1{
     border-radius: 5px;
     padding: 2px;
 }
